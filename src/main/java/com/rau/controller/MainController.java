@@ -63,6 +63,49 @@ public class MainController {
 		}
 		return modelAndView;
 	}
+
+    @RequestMapping(value={"/surf"}, method = RequestMethod.GET)
+    public ModelAndView surf(){
+        ModelAndView modelAndView = new ModelAndView();
+        modelAndView.setViewName("surf");
+        return modelAndView;
+    }
+
+	@RequestMapping(value={"/street"}, method = RequestMethod.GET)
+	public ModelAndView street(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("street");
+		return modelAndView;
+	}
+
+	@RequestMapping(value={"/bmx"}, method = RequestMethod.GET)
+	public ModelAndView bmx(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("bmx");
+		return modelAndView;
+	}
+
+	@RequestMapping(value={"/mtb"}, method = RequestMethod.GET)
+	public ModelAndView mtb(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("mtb");
+		return modelAndView;
+	}
+
+	@RequestMapping(value={"/wake"}, method = RequestMethod.GET)
+	public ModelAndView wake(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("wake");
+		return modelAndView;
+	}
+
+	@RequestMapping(value={"/snow"}, method = RequestMethod.GET)
+	public ModelAndView snow(){
+		ModelAndView modelAndView = new ModelAndView();
+		modelAndView.setViewName("snow");
+		return modelAndView;
+	}
+
 	
 	@RequestMapping(value="/admin/home", method = RequestMethod.GET)
 	public ModelAndView home(){

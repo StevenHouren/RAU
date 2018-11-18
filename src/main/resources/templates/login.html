@@ -27,14 +27,13 @@
 
 	<div id="mySidenav" class="sidenav">
 		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-		<a href="#">Home</a>
+		<a href="/index">Home</a>
 		<a href="#">Riders</a>
-		<a href="#">MTB</a>
-		<a href="#">BMX</a>
-		<a href="#">Wake</a>
-		<a href="#">Surf</a>
-		<a href="#">Snow</a>
-		<a href="#">Skate</a>
+		<a href="/mtb">MTB</a>
+		<a href="/bmx">BMX</a>
+		<a href="/wake">Wake</a>
+		<a href="/surf">Surf</a>
+		<a href="/street">Street</a>
 	</div>
 
 
@@ -58,9 +57,9 @@
 				<div align="center" th:if="${param.error}">
 					<p style="font-size: 20; color: #FF1C19;">Email or Password invalid, please verify</p>
 				</div>
-				<button class="btn btn-lg btn-primary btn-block" name="Submit" value="Login" type="Submit" th:text="Login"></button>
+				<button class="btn btn-lg btn-info btn-block" name="Submit" value="Login" type="Submit" th:text="Login"></button>
 
-				<div align="center" style="margin-top: 40px">
+				<div align="center" style="margin-top: 40px; color: #5bc0de;">
 					<a href="/registration">Not a member yet?</a>
 				</div>
 
